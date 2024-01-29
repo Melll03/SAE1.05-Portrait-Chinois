@@ -9,5 +9,4 @@ XAMPP :
 4. Chercher le sous dossier 'htdocs' et y déposer le 'Portrait_chinois_Mélissa_Cumur'.
 5. Ensuite, dans votre navigateur tappez l'adresse suivant : http://localhost/Portrait_chinois_Mélissa_Cumur
 
-lien tableur Opquast :
-https://docs.google.com/spreadsheets/d/1zoXXPQn0bUAoJXvsr7Kto5791JtPSvWlwXn9gkcNoeU/edit?usp=sharing
+
