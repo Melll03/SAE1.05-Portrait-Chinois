@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portrait Chinois</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="IMG/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Lobster&display=swap" rel="stylesheet">   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section id="accueil">
+    <header>
+      <div class="text-container">
+        <hr />
+        <span style="--color: #fff; --delay: 0s">P</span>
+        <span style="--color: rgb(20, 81, 109); --delay: 0.25s">O</span>
+        <span style="--color: #6d071a; --delay: 0.5s">R</span>
+        <span style="--color: #fff; --delay: 0.75s">T</span>
+        <span style="--color: rgb(20, 81, 109); --delay: 1s">R</span>
+        <span style="--color: #6d071a; --delay: 1.25s">A</span>
+        <span style="--color: #fff; --delay: 1.5s">I</span>
+        <span style="--color: rgb(20, 81, 109); --delay: 1.75s">T</span>
+        &nbsp;
+        &nbsp;
+        <span style="--color: #6d071a; --delay: 2s">C</span>
+        <span style="--color: #fff; --delay: 2.25s">H</span>
+        <span style="--color: rgb(20, 81, 109); --delay: 2.5s">I</span>
+        <span style="--color: #6d071a; --delay: 2.75s">N</span>
+        <span style="--color: #fff; --delay: 3s">O</span>
+        <span style="--color: rgb(20, 81, 109); --delay: 3.25s">I</span>
+        <span style="--color: #6d071a; --delay: 3.5s">S</span>
+        <hr /> <br>
+        <h2>Mélissa Cumur</h2>
+      </div>
+      <div class="scroll-down">
+        <a href="#section1">
+          <button>C'EST PARTI !</button>
+        </a>
+      </div>
+    </header>
+  </section>
+
+  <!-- Début Portrait -->
+  <div id="navbar" class="bar hide">
+    <div class="nav">
+          <ul>
+              <li><a href="#section1" alt="go-to-section1" class="nav-btn"></a></li>
+              <li><a href="#section2" alt="go-to-section2" class="nav-btn"></a></li>
+              <li><a href="#section3" alt="go-to-section3" class="nav-btn"></a></li>
+              <li><a href="#section4" alt="go-to-section4" class="nav-btn"></a></li>
+              <li><a href="#section5" alt="go-to-section5" class="nav-btn"></a></li>
+              <li><a href="#section6" alt="go-to-section6" class="nav-btn"></a></li>
+              <li><a href="#section7" alt="go-to-section7" class="nav-btn"></a></li>
+          </ul>
+      </div>
+  </div>   
+ <!-- Fin Portrait -->
+
+    <!-- Début formulaire -->
+    <div id="analogies" class="analogies"> </div>
+    <section class="form">
+      <form method="get">
+      <fieldset>
+          <legend>Et vous ?</legend>
+          <form class="formulaire">
+            <br>
+                <label for="name">Si j'étais<span class="star-required">*</span></label>
+                <input type="text" id="analogie" name="name" required minlength="4" maxlength="30" size="20" placeholder="Ex : une saison" >
+        
+                <label for="name">je serais<span class="star-required">*</span></label>
+                <input type="text" id="valeurAnalogie" name="name" required minlength="4" maxlength="30"   size="25" placeholder="Ex : le printemps" >
+            <br>
+            <br>
+            <label for="explicationform">Explication<span class="star-required">*</span></label>
+            <textarea id="explicationform" name="name" rows="6" cols="30" placeholder="Ex : parce que c'est ma saison préféré..."></textarea>
+        <br>
+        <br>
+            <label for="name">URL photo<span class="star-required">*</span></label>
+            <input type="url" id="photo" name="name" required minlength="4" maxlength="1000" size="55" placeholder="Lien de votre image">
+        <br>
+        <br>
+            <label for="mail">Email<span class="star-required">*</span></label> 
+            <input type="email" id="mail" name="name" required minlength="4" maxlength="1000" size="60" placeholder="Entrez votre adresse mail">
+            
+            <p class="submit-right">
+              <input type="submit" value="Envoyer">
+          </p>
+        </form>  
+       </fieldset>
+        <!-- fin formulaire -->        
+
+     <p id="message"></p>
+    </section>
+
+    <div id="newAnalogies" class="analogies">
+    </div>
+
+    <section id="footer"> 
+      <div class="page">
+          <div class="centerCarre">
+        </div>
+      </div>  
+
+      <!-- Mention légale -->
+     <footer>
+     <a href="#" id="mentionlegalelink">Mentions Légales</a>
+    
+       <p class="hautdepage"> <a href="#top" >Haut de page</a> </p>
+    
+        <div id="mentionlegalecontent" class="hidden"> 
+          <p>Les photos proviennent de <a href="https://unsplash.com/fr/" class="unsplash">Unsplash</a>,
+          <a href="https://www.pexels.com/fr-fr/" class="pexels">Pexels</a>, et
+          <a href="https://fr.freepik.com/" class="freepik">Freepik</a>.
+          <p>Responsable éditoriale, conception graphique et développement : Mélissa CUMUR, étudiante en MMI à l'université Gustave Eiffel</p>
+          <p>Hébergeur : Université Gustave Eiffel - 2 rue Albert Einstein, 77420 Champs-sur-Marne, France - +33 1 60 95 75 00 </p>
+          <p>Les données seront envoyées dans un serveur web, dont le responsable est Philippe Gambette : philippe.gambette@univ-eiffel.fr. </p>
+          <p>©2024 Tous droits réservés par Mélissa CUMUR.</p>
+       </div> 
+      </footer>
+    </section>
+  </div>
+  <script defer type="text/javascript" src="data.js"></script>  
+  <script defer type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+ 

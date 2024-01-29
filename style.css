@@ -1,0 +1,436 @@
+:root {
+  --clr-foreground: rgb(20, 81, 109);
+}
+ 
+/* effet éblouissant */
+
+@keyframes glow {
+  0%,
+  100% {
+    color: var(--color);
+    text-shadow: 0 0 10px orange, 0 0 50px orange, 0 0 100px;
+  }
+  10%,
+  90% {
+    color: white;
+    text-shadow: none;
+  }
+}
+
+/* ===============================================Début============================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+  
+  /* convetir le tout en border-box */
+  
+  html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  }
+  
+  /* smooth scrool */
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-foreground);
+  }
+  
+  /* margin à 0  pour le body + backgroud color */
+  
+  h2,
+  p {
+    margin: 0;
+  }
+  
+  /* Mettre toute les margin à 0 pour les textes */
+   
+  /* ================================================= ACCUEIL / Header ================================================= */
+  
+header {
+  height: 100vh;
+  /*vh = 100% d'un écran en hauteur */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    var(--img-background);
+  /* me permet d'assombrir l'image de fond */
+  background-size: cover;
+  /* cover = couvrir la place donné*/
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* alignement au centre */
+  z-index: 10;
+  transition: all 2s ease;
+  top: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+  
+  /* définition d'une section  */
+  
+.text-container>span {
+  font-family:'DM Serif Display', serif;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 100;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: glow 3s ease-in-out infinite;
+  animation-delay: var(--delay);
+  margin: 0;
+  letter-spacing: 13px;
+}
+ /* Mise en forme du titre Portrait chinois */
+ 
+hr {
+  color: white;
+  width: 70%;
+}
+  
+/* création de deux barres pour le design  */
+  
+.text-container h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  /* letter-spacing pour écarter mes lettres */
+  color: white;
+  text-align: center;
+  justify-content: center;    
+}
+/* Mise en forme du titre h2 */
+
+  
+button {
+  padding: 1.3em 3em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color : #fff;
+  background-color: #fff;
+  border-radius: 45px;
+  box-shadow: 0,0,0,0.1;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: rgb(19, 43, 54);
+}
+/* Mise en forme du boutton */
+
+button:hover{
+  background-color:rgb(5, 17, 23) ;
+  box-shadow: 0px 15px 20px rgb(20, 81, 109);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+  
+.scroll-down {
+  position: absolute;
+  bottom: 9vh;
+  color: white;
+  font-family: 'DM Serif Display', serif;
+  text-transform: uppercase;
+}
+  
+/* scroll-down à la page suivante */
+  
+/* ================================================= Début Navbar ================================================= */
+  
+/* Barre de navigation */
+  
+.nav {
+  list-style: none;
+  position: fixed;
+  z-index: 10;
+  color: white;
+  top: 0;
+  bottom: 0;
+  right: 2vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.nav a {
+  transition: all 500ms ease;
+}
+  
+.nav a:hover {
+  transition: none;
+  transition: all 500ms ease;
+}
+  
+.nav ul {
+  list-style: none;
+}
+  
+.nav-btn {
+  margin: 13px;
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 15px;
+}
+  
+.nav-btn:hover {
+  background-color: rgb(20, 81, 109);
+  width: 15px;
+  height: 15px;
+}
+  
+.bar {
+  position: fixed;
+  z-index: 1;
+  transition: all 1s;
+}
+  
+.hide {
+  opacity: 0;
+  left: -100%;
+}
+  
+  /* ================================================= Début analogie ================================================= */
+   
+.carre {
+  position: relative;
+  width: 40vw;
+  /* height: 50vh;*/ 
+  border-radius: 50px;
+  background-color: #18222b;
+  padding: 2.5rem;
+  color: white;
+  font-size: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  }
+
+.centreCarre {
+  width: 45vw;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+/* definition du Carre */
+  
+.bordure {
+  position:fixed
+}
+  
+.imgFond {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+  
+/* Definition des caractéristiques de l'image de fond des analogies */
+  
+.centreCercle {
+  height: 22vh;
+  width: 22vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  /* Permet de centrer le cercle et sa bordure */
+  
+.cercleAna {
+  position: initial;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 60%;
+  background-size: cover;
+  }
+   /* Definition du cercle */
+  
+.bordureAna {
+  box-sizing: border-box;
+  position: absolute;
+  width: 22vw;
+  height: 22vw;
+  border-radius: 50%;
+  /* arrondissement des coins */
+  border: 5px solid #fff;
+  }
+   /* Definition des bordures du cercle */
+   
+  .legendAnalogies {
+    margin-bottom: 1rem;
+  }
+ /*Espacement entre l'analogie et le texte*/
+   
+/* ================================================= DEBUT FORMULAIRE ================================================= */
+ 
+.form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
+
+form label {
+  margin-bottom: -1rem;
+}
+
+input {
+  font-family: 'DM Serif Display', serif;
+  padding: 1rem;
+  border: none;
+  width: 15rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white; 
+}
+
+input:focus {
+  outline: 1px solid white;
+}
+ 
+.formulaire {
+  width: 300px;
+  padding: 10px;
+  border: solid 2px rgb(255, 255, 255); 
+  width: fit-content;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  height: fit-content; 
+}
+
+.submit-right {
+  text-align: right;
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: rgb(20, 81, 109);
+  padding: 0.3em 1em;
+  font-size: 1rem;
+  transition: all ease 400ms;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+legend {
+  background-color:rgb(19, 43, 54);
+  color: white;
+  padding: 8px 20px;
+  font-size: 1.5rem;
+  border-radius: 60%;
+}
+
+.star-required {
+  color: white;
+}
+/* Champs obligatoire */
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+/* Firefox, Chrome, Safari*/
+
+  /* ================================================= DEBUT FOOTER ================================================= */
+.page {
+  visibility: hidden;
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+     
+.hidden {
+  display: none;
+} 
+    
+  /*Faire disparaître le pop mention Légale*/
+  
+  #mentionlegalelink {
+    font-size: 1.2rem;
+    font-family: 'DM Serif Display', serif;
+  }
+  
+footer p {
+    text-align: center;
+    width: 100%;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+    padding: 0.5rem;
+    margin: auto;
+    margin-top: 3px;
+    color: white;
+}
+    
+.pexels {
+  color: orange;
+}
+    
+.unsplash {
+  color:orange ;
+}
+    
+.freepik {
+  color: orange;
+}
+
+a{
+ text-decoration: none;
+ color: white;
+}
+    
+a:hover {
+  text-decoration: underline;
+ }
+  
+   /* ================================================= Haut de Page ================================================= */   
+  
+.hautdepage {
+  text-align: center; 
+  text-transform: uppercase;
+  letter-spacing: 2.5px; 
+  font-family: 'DM Serif Display', serif;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
