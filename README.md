@@ -1,6 +1,7 @@
 # SAE1.05-Portrait-Chinois
 Mon Site web :
 https://etudiant.u-pem.fr/~melissa.cumur/portrait-chinois/
+https://melll03.github.io/SAE1.05-Portrait-Chinois/
 
 XAMPP : 
 1. Installer XAMPP sur l'ordinateur.
